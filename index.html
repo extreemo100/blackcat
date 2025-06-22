@@ -63,9 +63,9 @@
           const light = new THREE.HemisphereLight(0xffffff, 0xbbbbff, 1);
           scene.add(light);
 
-          const gltf = await loadGLTF('blackcat2.glb');
-          gltf.scene.scale.set(0.06,0.06,0.06);
-          gltf.scene.position.set(0 , -.2, -.1);
+          const gltf = await loadGLTF('blackcat3.glb');
+          gltf.scene.scale.set(0.05,0.05,0.05);
+          gltf.scene.position.set(0 , -.4, -.2);
 
           const anchor = mindarThree.addAnchor(0);
           anchor.group.add(gltf.scene);
